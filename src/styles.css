@@ -1,0 +1,91 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(#1c2e4c, #92e1e2);
+}
+
+.title {
+  font-size: 85px;
+  color: #fff;
+  animation: flipTitle 1.5s;
+}
+
+@keyframes flipTitle {
+  from {
+    transform: rotateX(90deg);
+  }
+
+  to {
+    transform: rotateX(0deg);
+  }
+}
+
+.containerInput {
+  background-color: #dadada;
+  padding: 15px;
+  margin: 34px 0;
+  display: flex;
+  border-radius: 8px;
+
+}
+.containerInput input {
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  color: #000;
+  outline: none;
+  margin-right: 8px;
+}
+
+.content{ 
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #dadada;
+  width: 500px;
+  border-radius: 8px;
+}
+.search {
+  background-color: transparent;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+transition: transform 0.9s;
+}
+
+.search:hover{
+  transform: scale(1.2)
+}
+
+.content h2 {
+  margin: 16px 0px;
+  font-size: 36px;
+
+}
+
+.content span {
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+@media (max-width: 650px){
+  .title{
+    font-size: 45px;
+  }
+
+  .content{
+    width: 85%;
+    min-height: 225px;
+  }
+  .content h2 {
+    font-size: 22px;
+  }
+
+}
